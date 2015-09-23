@@ -1,3 +1,61 @@
 ﻿@{
     ViewBag.Title = "XTRA_EXP";
+
+    var msg = "msg-text";
+    
+    var txt = "";
+    if (DateTime.Now.Hour > 12)
+    { txt = "Good Evening"; }
+    else
+    { txt = "Good Morning"; }
+
+
+    //-----------------
+
+    var totalMessage = "";
+    var vIsPost = IsPost;
+    
+    if (IsPost)
+    {
+        var num1 = Request["text1"];
+        var num2 = Request["text2"];
+        var total = num1.AsInt() + num2.AsInt();
+        totalMessage = "Total = " + total;
+    }
 }
+}
+
+<script>
+    alert('@msg');
+
+    alert('@DateTime.Now.ToShortDateString()');
+    alert('@DateTime.Now.ToString("dd-MMMM-yyyy hh:mm:ss tt")');
+
+
+    console.log('@DateTime.Now.ToString("dd-MMMM-yyyy hh:mm:ss tt")')
+
+    @*@DateTime.Now.Hour*@
+
+    console.log('@txt')
+
+    console.log('IS-POST: @vIsPost')
+    
+
+</script>
+<!DOCTYPE html>
+<html>
+<body style="background-color: beige; font-family: Verdana, Arial;">
+    <form action="" method="post">
+        <p>
+            <label for="text1">First Number:</label><br>
+            <input type="text" name="text1">
+        </p>
+        <p>
+            <label for="text2">Second Number:</label><br>
+            <input type="text" name="text2">
+        </p>
+        <p><input type="submit" value=" Add "></p>
+    </form>
+    <p>@totalMessage</p>
+</body>
+</html>
