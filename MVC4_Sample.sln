@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC4_Sample", "MVC4_Sample\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC4_Sample.Tests", "MVC4_Sample.Tests\MVC4_Sample.Tests.csproj", "{85BE104C-8337-4E8B-BC13-76472CA92649}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget.", ".nuget.", "{27517BCC-2F16-49C2-A3C8-5B55295A258D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{27517BCC-2F16-49C2-A3C8-5B55295A258D}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
