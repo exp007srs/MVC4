@@ -250,7 +250,9 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\FTP_AZURE_PUB.pubxml" />
     <None Include="Properties\PublishProfiles\LOCAL_PUB.pubxml" />
+    <None Include="Properties\PublishProfiles\WEB_DEPLOY_AZURE_PUB.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
